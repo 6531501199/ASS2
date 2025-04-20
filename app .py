@@ -10,12 +10,7 @@ with open('kmeans_model.pkl','rb') as f:
 st.set_page_config(page_title = 'k-Means Clustering', layout = 'centered')
 
 #set title
-st.title("k-Means Clustering Visualizer by Supanit Innawong")
-
-#Diasplay
-st.subheader('Example Data for Visualization')
-st.markdown('This demo user example data (2D) to illustrate clustering results.')
-#cluster = st.slider('number of cluster',2,10)
+st.title("k-Means Clustering Visualizer by🪄 Supanit Innawong")
 
 #load form a saved dataset
 X, _ = make_blobs(n_samples=300, centers=model.n_clusters, cluster_std=0.60, random_state=0)
